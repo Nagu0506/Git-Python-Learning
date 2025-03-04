@@ -1,0 +1,300 @@
+Q:Print Hello world?
+A:print("Hello world")
+A:print('Hello world')
+We can print a statement with using single quotation marks or double quotation marks.
+
+
+2Q: Create a variable named name and assign your name to it as a string?
+    A:
+Name = ("Chinna")
+    print(Name)
+    OP:Chinna
+
+3Q: Create a variable named age and assign your age to it as an integer?
+    A:
+    Age = int((21))
+    print(Age)
+    OP:21
+
+4Q:Print a sentence like "My name is [name] and I am [age] years old." using f-strings (or .format() if you prefer).
+A: 
+    Name = ("Chinna")
+   Age = int((21))
+   print(f"My name is {Name} and i am {Age} years old")
+
+Basic Math:
+=================
+5Q: * Create two variables, num1 and num2, and assign them integer values.
+    A:
+    Num1 = int(10)
+    Num2 = int(5)
+    print(Num1,Num2)
+
+
+6Q: Calculate the sum, difference, product, and quotient of num1 and num2.
+    A: 
+    Num1 = int(10)
+    Num2 = int(5)
+    add = Num1 + Num2
+    difference = Num1 - Num2
+    product = Num1 * Num2
+    Division = Num1 % Num2
+    print(Num1,Num2)
+    print(str(add) +"\n" + str(difference) + "\n" + str(product) +"\n" + str(Division))
+OP:
+10 5
+15
+5
+50
+0
+
+String manipulations:
+=====================
+7Q: Create a string variable called message and assign it a sentence.
+    A:
+    Message = ('Hai you are learning Python')
+    print(Message)
+OP:Hai you are learning Python
+
+
+8Q: Print the length of the string
+A
+     Message = ('Hai you are learning Python! ')
+     print(len(Message))
+OP:29 It includes spaces also
+
+
+9Q:Print the string in uppercase.
+A:
+    Message = ('Hai you are learning Python! ')
+    print(Message.upper())
+
+OP:
+HAI YOU ARE LEARNING PYTHON! 
+
+10Q:Print the first 5 characters of the string.
+A:
+Message = ('Hai you are learning Python! ')
+print(Message[0:5])
+OP:Hai y
+
+
+11Q: Ask the user to enter a number using the input() function (remember to convert it to an integer).
+A:
+Number = int(input("Enter the number you want?"))
+print(Number) 
+OP:Enter the number you want? 1000
+1000
+
+12Q:Check if the number is positive, negative, or zero.
+A
+:Number = int(input("Enter the number you want?"))
+print(Number) 
+if Number<0:
+    print("The number is negative number")
+elif Number == 0:
+    print("The number is Zero")
+elif Number > 0:
+    print("The number is positive number")
+OP:Enter the number you want? 455
+455
+The number is positive number
+
+
+
+List Practice:
+===============
+13Q:Create a list of your favorite fruits.
+A:
+fruits = list['Apple', 'Banana', 'Custard apple', 'Guava' , 'Papay']
+print(fruits)
+OP:list['Apple', 'Banana', 'Custard apple', 'Guava', 'Papay']
+
+
+
+14Q:Add a new fruit to the list.
+A:
+fruits = ['Apple', 'Banana', 'Custard apple', 'Guava' , 'Papay']
+new_fruits = fruits.append('kiwi')
+
+print(fruits)
+OP:['Apple', 'Banana', 'Custard apple', 'Guava', 'Papay', 'kiwi']
+
+
+15Q:Print the second fruit in the list.
+A:
+fruits = ['Apple', 'Banana', 'Custard apple', 'Guava' , 'Papay']
+fruits.append('kiwi')
+
+print(fruits[1])
+OP: Banana
+
+
+
+16Q:Remove the last fruit from the list
+A:
+fruits = ['Apple', 'Banana', 'Custard apple', 'Guava' , 'Papay']
+fruits.pop(-1)
+
+print(fruits)
+OP:['Apple', 'Banana', 'Custard apple', 'Guava']
+
+
+
+17Q: Print the updated list.
+A:
+fruits = ['Apple', 'Banana', 'Custard apple', 'Guava' , 'Papay']
+new_fruit  = fruits
+
+print(fruits)
+OP:['Apple', 'Banana', 'Custard apple', 'Guava', 'Papay']
+
+
+Using for loops:
+================
+18Q: Use a for loop to print the numbers from 1 to 10
+A:
+for i in range(1,11):
+    print(i)
+OP:1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+19Q:Use a for loop to iterate through your list of fruits and print each fruit.
+A:
+for i in fruits:
+    print(i)
+OP:Apple
+Banana
+Custard apple
+Guava
+Papay
+
+
+
+
+Using While Loops:
+=====================
+20Q: Use a while loop to print the numbers from 1 to 10 (another way to do it!).
+A:
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+OP:
+    
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+
+21Q: Ask the user to enter numbers repeatedly until they enter a negative number.  Print the sum of all the positive numbers entered.
+A:
+sum_of_positives = 0
+while True:
+    Num =int(input("Enter the number you want"))
+    if Num < 0:
+        break
+    sum_of_positives += Num
+    print("Sum of positive numbers:", sum_of_positives)
+OP:Enter the number you want 45
+Sum of positive numbers: 45
+Enter the number you want 78
+Sum of positive numbers: 123
+Enter the number you want 89
+Sum of positive numbers: 212
+Enter the number you want 46
+Sum of positive numbers: 258
+Enter the number you want 562
+Sum of positive numbers: 820
+Enter the number you want 3213
+Sum of positive numbers: 4033
+Enter the number you want 0
+Sum of positive numbers: 4033
+Enter the number you want -8
+
+
+
+
+22Q:Create a function called greet that takes a name as an argument and prints "Hello, [name]!".
+A: 
+def greet(name):
+    print(f"Hello, {name}!")
+
+
+
+
+23Q: Call the function with your name as the argument?
+A:
+def greet(name):
+    name = input("enter your name")
+    print(f"Your name is {name}")
+greet(Name)
+OP:
+enter your name Nagu
+Your name is Nagu
+
+
+
+24Q:* Create a function called add that takes two numbers as arguments and returns their sum?
+A:
+def add(num1,num2):
+    return num1 + num2
+
+
+
+
+Working with Lists and functions:
+==================================
+
+25Q: Create a list of numbers.
+A:
+ numbers = [10,20,30,40,50]
+
+
+
+26Q: Create a function that takes a list of numbers as input and returns the average of the numbers.
+A:
+   def list_Average(My_list):
+    My_list = [1,2,3,4,5]
+    return sum(My_list)/ len(My_list)
+    
+list_Average(avg)
+OP:3.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

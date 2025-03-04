@@ -1,0 +1,328 @@
+1Q:Write a Python program that prints the numbers from 1 to 10 using a for loop?
+A 
+ for i in range(1,11):
+    print(i)
+OP:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+2 Question: Write a Python program that calculates the sum of all elements in a list using a for loop.
+A:
+ list = [1,2,3,4,5]
+total = 0
+for element in list:
+    total+= element
+print(total)
+ 
+OP:15
+
+
+
+3 Question: Write a Python program that prints the characters of a string in reverse order using a for loop.
+A:
+my_string = ("This is my string")
+
+
+for i  in range(len(my_string) -1 , -1, -1):
+    print(my_string[i])
+
+
+OP:16
+g
+n
+i
+r
+t
+s
+ 
+y
+m
+ 
+s
+i
+ 
+s
+i
+h
+T
+
+
+4Write a Python program that prints the even numbers from 2 to 20 using a for loop and the range() function with a step.
+
+A:
+ for i in range(2,22,2):
+    print(i)
+OP:
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+
+
+ 4Question: Write a Python program that iterates through a dictionary and prints the keys and values?
+A:my_fav = {
+    "food":"Sweet Potato",
+    "travel_likes" : "Yes",
+    "views":"Beaches"
+}
+
+for key, value in my_fav.items():
+    print(f"{key}:{value}")
+
+OP:food:Sweet Potato
+travel_likes:Yes
+views:Beaches
+
+
+
+
+
+while Loops:
+============
+ 5Question: Write a Python program that prints the numbers from 1 to 10 using a while loop.
+
+A:
+i = 1
+while i <=10:
+    print(i)
+    i += 1
+
+OP:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+    
+
+6 Question: Write a Python program that calculates the factorial of a number using a while loop.
+
+A:
+   Number = int(input("Enter the number"))
+factorial = 1
+while Number>0:
+    factorial *= Number
+    Number -=1
+
+    print("Factorial",factorial)
+OP:Enter the number 5
+Factorial 5
+Factorial 20
+Factorial 60
+Factorial 120
+Factorial 120
+
+
+7Question:Write a Python program that takes input from the user until they enter "quit".
+A:	user_input = ""
+
+while user_input != "quit":
+    user_input = input("Enter the number(until quit)")
+    if user_input != "quit":
+        print("you entered",user_input)
+    
+OP:
+Enter the number(until quit) 5
+you entered 5
+Enter the number(until quit) 5
+you entered 5
+Enter the number(until quit) 8
+you entered 8
+Enter the number(until quit) 9
+you entered 9
+Enter the number(until quit) quit
+
+
+8Question: Write a Python program that finds the first power of 2 greater than 1000 using a while loop.
+A:
+power = 1
+result = 2
+while result <= 2000:
+    result = 2**power
+    power = power + 1
+print(result)
+
+OP:2048
+
+
+
+
+9Question: Write a Python program that simulates a simple countdown timer using a while loop. Start from 5 and count down to 1.
+
+
+
+
+
+
+
+
+
+
+
+
+Function based questions:
+=========================
+10Question: Write a function celsius_to_fahrenheit(celsius) that converts a temperature from Celsius to Fahrenheit. The formula is: Fahrenheit = (Celsius * 9/5) + 32.form the user?
+A:
+	
+def celsius_to_fahrenheit(celsius):
+    """Converts Celsius to Fahrenheit."""
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+# Get Celsius input from the user outside the function
+celsius_value = float(input("Enter the temperature in Celsius: "))  # Use float for decimal values
+
+# Call the function with the user-provided Celsius value
+fahrenheit_value = celsius_to_fahrenheit(celsius_value)
+
+# Print the result
+print(f"{celsius_value} degrees Celsius is equal to {fahrenheit_value} degrees Fahrenheit")
+OP:
+Enter the temperature in Celsius:  25
+25.0 degrees Celsius is equal to 77.0 degrees Fahrenheit
+10Question: Write a function celsius_to_fahrenheit(celsius) that converts a temperature from Celsius to Fahrenheit. The formula is: Fahrenheit = (Celsius * 9/5) + 32?
+
+
+A:def celsius_to_fahrenheit(celsius):
+    Farenheit = (celsius * 9/5) +32
+    return Farenheit
+print(celsius_to_fahrenheit(25))
+OP:
+77.0
+
+
+. String Reversal
+======================
+11 * Question: Write a function reverse_string(s) that takes a string s as input and returns the reversed string.
+
+A:
+def rev_string(s):
+   
+   
+    return s[::-1]
+print(rev_string("hello"))
+OP:olleh
+
+
+
+ List Sum
+===========
+12 * Question: Write a function list_sum(numbers) that takes a list of numbers as input and returns the sum of all the numbers in the list?
+A:
+def list_sum(numbers):
+    total  = 0
+    for i in numbers:
+        total += i
+    return total
+print(list_sum([1,2,3,4,5]))
+
+OP:15
+
+
+
+ Finding the Maximum Value
+==========================
+13 * Question: Write a function find_max(numbers) that takes a list of numbers as input and returns the maximum value in the list.
+A:
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14 Question: Write a function is_even(number) that takes an integer as input and returns True if the number is even, and False otherwise.
+from the user?
+A:
+def is_even(number):
+    
+    return number%2==0 
+try:
+  user_input = int(input("Enter an integer: "))
+  result = is_even(user_input)
+  print(f"{user_input} is even: {result}")
+except ValueError:
+  print("Invalid input. Please enter an integer.")
+
+OP:Enter an integer:  5
+5 is even: False
+
+
+
+
+
+Fibonacci:
+=========
+Number = int(input("Enter the number"))
+a = 0
+b = 1
+if Number >=1:
+    print(a)
+if Number >=2:
+    print(b)
+    for i in range(2, Number):
+        c = a+b
+        print(c)
+        a = b
+        b = c
+    
+
+OP:Enter the number 5
+0
+1
+1
+2
+3
+
+
+     
+
+    
